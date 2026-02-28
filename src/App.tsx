@@ -664,7 +664,7 @@ export default function App() {
   const [isAIChatOpen, setIsAIChatOpen] = useState(false);
   const [mapBounds, setMapBounds] = useState<google.maps.LatLngBounds | null>(null);
 
-  const googleMapsApiKey = process.env.VITE_GOOGLE_MAPS_API_KEY || "";
+  const googleMapsApiKey = (import.meta as any).env.VITE_GOOGLE_MAPS_API_KEY || "";
 
   useEffect(() => {
     const offTrips = on('SYNC_TRIPS', (data: any[]) => {
