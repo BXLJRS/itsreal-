@@ -1,0 +1,7 @@
+{
+  "name": "이거 진짜에요맵",
+  "description": "Real-time collaborative travel planner with gamified conflict resolution (RPS battles, voting) and global undo.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
